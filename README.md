@@ -16,10 +16,10 @@ are used to capture and analyze data on a more permanent basis.
 
 ## PSQL Syntax
 
-\du - lists users
-\dt - lists tables
-\d+ table_name - list details about the table name \l - lists databases
-\c NAME_OF_DB - connect to a database
+- \du - lists users
+- \dt - lists tables
+- \d+ table_name - list details about the table name \l - lists databases
+- \c NAME_OF_DB - connect to a database
 
 New databases can be created in two ways:
 1. In psql type CREATE DATABASE name_of_db;
