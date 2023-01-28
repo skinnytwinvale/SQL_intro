@@ -26,5 +26,5 @@ New databases can be created in two ways:
 2. In the terminal type createdb name_of_db 
 
 Existing databases can be removed in two ways:
-5. In psql type DROP DATABASE name_of_db; - make sure you are not connected to that database or the command will not work
-6. In the terminal type dropdb name_of_db
+1. In psql type DROP DATABASE name_of_db; - make sure you are not connected to that database or the command will not work
+2. In the terminal type dropdb name_of_db
