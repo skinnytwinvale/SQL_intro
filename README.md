@@ -13,3 +13,18 @@ are used to capture and analyze data on a more permanent basis.
 8. Column - A portion of a table which has a specific category and data type. If we had a table called "users", we could create columns for "username", "password", which would both be a variable amount of characters or text. Postgres has quite a few data types, which we will see later
 9. Row / Record - Each row in a table represents a record stored. In our "users" table, we may have a row that looks like 1, "elie", "secret". Where 1 represents a unique id, "elie" represents the value of the "username" and "secret" represents the value of the "password".
 10. psql - a command line program, which can be used to enter PostgreSQL queries directly, or executed from a file.
+
+## PSQL Syntax
+
+\du - lists users
+\dt - lists tables
+\d+ table_name - list details about the table name \l - lists databases
+\c NAME_OF_DB - connect to a database
+
+New databases can be created in two ways:
+1. In psql type CREATE DATABASE name_of_db;
+2. In the terminal type createdb name_of_db 
+
+Existing databases can be removed in two ways:
+5. In psql type DROP DATABASE name_of_db; - make sure you are not connected to that database or the command will not work
+6. In the terminal type dropdb name_of_db
