@@ -28,3 +28,8 @@ New databases can be created in two ways:
 Existing databases can be removed in two ways:
 1. In psql type DROP DATABASE name_of_db; - make sure you are not connected to that database or the command will not work
 2. In the terminal type dropdb name_of_db
+
+## Syntax Gotchas
+
+1. The most important thing with SQL syntax is to end your statements with a SEMI-COLON ;. SQL will not understand when you have finished your statement unless it sees that.
+2. You also MUST make sure to put all text strings in single quotes ', not double quotes. SQL views double quotes as a name of a table and single quotes as a string.
