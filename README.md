@@ -52,3 +52,14 @@ CREATE TABLE users (id SERIAL PRIMARY KEY,
 \d+ users should show our newly-created users table with 3 columns: id, first_name, last_name
                     
 In the example above, users is the name of the table we are creating. The id, first_name, and last_name are all columns in the users table. SERIAL and TEXT are examples of data types, which we will talk about in detail next. PRIMARY KEY is a constraint placed on the column.
+
+## Data Types in Postgres
+In relational databases like postgres, you must specify the type of data that you plan to store in a column. Here are the types in postgres:
+SERIAL - auto incrementing integer, perfect for IDs
+TEXT - pieces of text (equally as space efficient as VARCHAR)
+1/5
+VARCHAR - a variable number of characters CHAR - a fixed number of characters BOOLEAN - a boolean
+INTEGER - an integer
+REAL - a floating point number, e.g., 3.141593
+DECIMAL, NUMERIC - floating point numbers that have user specified percision. MONEY - floating point numbers use for money
+ARRAY - an array (array types are rarely used)
