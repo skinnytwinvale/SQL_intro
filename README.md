@@ -62,3 +62,5 @@ In relational databases like postgres, you must specify the type of data that yo
 - REAL - a floating point number, e.g., 3.141593
 - DECIMAL, NUMERIC - floating point numbers that have user specified percision. MONEY - floating point numbers use for money
 - ARRAY - an array (array types are rarely used)
+
+## Constraints
