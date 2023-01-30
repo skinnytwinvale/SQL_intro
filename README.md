@@ -125,10 +125,10 @@ ALTER TABLE users ADD CONSTRAINT favorite_number NOT NULL;
 When we perform CRUD operations on our rows (not columns, tables or databases) we are using DML or Data Manipulation Language.
 
 CRUD SQL
-Create INSERT
-Read   SELECT 
-Update UPDATE 
-Delete DELETE
+- Create INSERT
+- Read   SELECT 
+- Update UPDATE 
+- Delete DELETE
 
 
 
