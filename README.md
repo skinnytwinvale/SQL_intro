@@ -44,7 +44,8 @@ DML - Data Manipulation Language - this refers to the SQL syntax and commands ar
 reading, modifying and deleting rows.
 
 ### Creating a table (DDL)
-
 CREATE TABLE users (id SERIAL PRIMARY KEY,
+                    
                     first_name TEXT,
+                    
                     last_name TEXT);
