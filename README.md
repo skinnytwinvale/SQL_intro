@@ -33,3 +33,18 @@ Existing databases can be removed in two ways:
 
 1. The most important thing with SQL syntax is to end your statements with a SEMI-COLON ;. SQL will not understand when you have finished your statement unless it sees that.
 2. You also MUST make sure to put all text strings in single quotes ', not double quotes. SQL views double quotes as a name of a table and single quotes as a string.
+
+## DDL vs DML
+When working with SQL, the commands you will be using fall into two major categories:
+
+DDL - Data Definition Language - this refers to the SQL syntax and commands around creating,
+modifying and deleting tables, columns and databases.
+
+DML - Data Manipulation Language - this refers to the SQL syntax and commands around creating,
+reading, modifying and deleting rows.
+
+### Creating a table (DDL)
+
+CREATE TABLE users (id SERIAL PRIMARY KEY,
+                    first_name TEXT,
+                    last_name TEXT);
