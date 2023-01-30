@@ -70,7 +70,7 @@ Common constraints are:
 
 - not null - when creating or updating a record, a column value cannot be made NULL. This constraint is requiring information; for example, a table of college students cannot have NULL for their college major.
 
-CREATE TABLE college_students (
+CREATE TABLE table_name (
     id SERIAL PRIMARY KEY,
     last_name VARCHAR(50),
     first_name VARCHAR(50),
@@ -79,7 +79,7 @@ CREATE TABLE college_students (
 
 - unique - a column value for a record must be unique in its table. For example, consider a table of users with a phone_number column: no two users may have the same phone number, so a unique constraint is placed on that column.
 
-CREATE TABLE phonebook (
+CREATE TABLE table_name (
     id SERIAL PRIMARY KEY,
     last_name VARCHAR(50),
     first_name VARCHAR(50),
@@ -87,17 +87,48 @@ CREATE TABLE phonebook (
     
 - primary key - an identifier for a record which has both unique and not-null constraints. Primary keys are used internally by the RDBMS to reference rows. Good examples of primary keys include: drivers license number, social security number, auto-generated unique IDs such as a UUID, etc. Bad examples are things like email address, full name, or phone number.
 
-CREATE TABLE users (id SERIAL PRIMARY KEY,
+CREATE TABLE table_name (id SERIAL PRIMARY KEY,
                     first_name TEXT,
                     last_name TEXT);
                     
 - foreign key - we'll talk about foreign keys later when we talk about joins.
 - check - an expression is provided that must evaluate truthy for the operation to proceed. For example, if you have a table of products for an online shopping site, you might put a check constraint on products to have price > 0.
 
-CREATE TABLE products (
+CREATE TABLE table_name (
     product_no SERIAL PRIMARY KEY,
     name TEXT,
     price NUMERIC CHECK (price > 0)
 );
+
+### Adding a column in a table
+ALTER TABLE users ADD COLUMN favorite_number INTEGER;
+
+### Removing a column in a table
+ALTER TABLE users DROP COLUMN favorite_number;
+
+### Renaming columns in a table
+ALTER TABLE users ADD COLUMN jobb TEXT;
+
+ALTER TABLE users RENAME COLUMN jobb TO job;
+
+\d+ table_name and we should see 'job' spelled correctly now
+
+## Changing the datatype of a column in a table DDL
+ALTER TABLE users ADD COLUMN favorite_number TEXT;
+
+ALTER TABLE users ALTER COLUMN favorite_number SET DATA TYPE VARCHAR(100);
+
+### Adding a constraint to a table
+ALTER TABLE users ADD CONSTRAINT favorite_number NOT NULL;
+
+## Creating and Modifying data (DML)
+When we perform CRUD operations on our rows (not columns, tables or databases) we are using DML or Data Manipulation Language.
+
+CRUD SQL
+Create INSERT
+Read   SELECT 
+Update UPDATE 
+Delete DELETE
+
 
 
