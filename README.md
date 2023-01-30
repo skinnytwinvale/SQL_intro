@@ -64,3 +64,40 @@ In relational databases like postgres, you must specify the type of data that yo
 - ARRAY - an array (array types are rarely used)
 
 ## Constraints
+Constraints are certain database table restrictions that are either implicitly or explicitly created via the database schema. Constraints are a key part of DDL. Violating a constraint will throw a database error and (usually) abort the intended operation.
+
+Common constraints are:
+
+- not null - when creating or updating a record, a column value cannot be made NULL. This constraint is requiring information; for example, a table of college students cannot have NULL for their college major.
+
+CREATE TABLE college_students (
+    id SERIAL PRIMARY KEY,
+    last_name VARCHAR(50),
+    first_name VARCHAR(50),
+    major VARCHAR(50) NOT NULL
+);
+
+- unique - a column value for a record must be unique in its table. For example, consider a table of users with a phone_number column: no two users may have the same phone number, so a unique constraint is placed on that column.
+
+CREATE TABLE phonebook (
+    id SERIAL PRIMARY KEY,
+    last_name VARCHAR(50),
+    first_name VARCHAR(50),
+    phone_number VARCHAR(7) UNIQUE
+    
+- primary key - an identifier for a record which has both unique and not-null constraints. Primary keys are used internally by the RDBMS to reference rows. Good examples of primary keys include: drivers license number, social security number, auto-generated unique IDs such as a UUID, etc. Bad examples are things like email address, full name, or phone number.
+
+CREATE TABLE users (id SERIAL PRIMARY KEY,
+                    first_name TEXT,
+                    last_name TEXT);
+                    
+- foreign key - we'll talk about foreign keys later when we talk about joins.
+- check - an expression is provided that must evaluate truthy for the operation to proceed. For example, if you have a table of products for an online shopping site, you might put a check constraint on products to have price > 0.
+
+CREATE TABLE products (
+    product_no SERIAL PRIMARY KEY,
+    name TEXT,
+    price NUMERIC CHECK (price > 0)
+);
+
+
