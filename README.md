@@ -44,8 +44,10 @@ DML - Data Manipulation Language - this refers to the SQL syntax and commands ar
 reading, modifying and deleting rows.
 
 ### Creating a table (DDL)
+
 CREATE TABLE users (id SERIAL PRIMARY KEY,
-                    
                     first_name TEXT,
-                    
                     last_name TEXT);
+\d+ users should show our newly-created users table with 3 columns: id, first_name, last_name
+                    
+In the example above, users is the name of the table we are creating. The id, first_name, and last_name are all columns in the users table. SERIAL and TEXT are examples of data types, which we will talk about in detail next. PRIMARY KEY is a constraint placed on the column.
