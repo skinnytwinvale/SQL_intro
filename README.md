@@ -130,5 +130,13 @@ CRUD SQL
 - Update UPDATE 
 - Delete DELETE
 
+### SELECT
+--to select all rows and columns--
+SELECT * FROM users;
 
+--to select specific columns--
+SELECT id, first_name FROM users;
+
+--to select specific columns and rows--
+SELECT id, first_name FROM users WHERE id=1;
 
