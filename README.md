@@ -55,11 +55,10 @@ In the example above, users is the name of the table we are creating. The id, fi
 
 ## Data Types in Postgres
 In relational databases like postgres, you must specify the type of data that you plan to store in a column. Here are the types in postgres:
-SERIAL - auto incrementing integer, perfect for IDs
-TEXT - pieces of text (equally as space efficient as VARCHAR)
-1/5
-VARCHAR - a variable number of characters CHAR - a fixed number of characters BOOLEAN - a boolean
-INTEGER - an integer
-REAL - a floating point number, e.g., 3.141593
-DECIMAL, NUMERIC - floating point numbers that have user specified percision. MONEY - floating point numbers use for money
-ARRAY - an array (array types are rarely used)
+- SERIAL - auto incrementing integer, perfect for IDs
+- TEXT - pieces of text (equally as space efficient as VARCHAR)
+- VARCHAR - a variable number of characters CHAR - a fixed number of characters BOOLEAN - a boolean
+- INTEGER - an integer
+- REAL - a floating point number, e.g., 3.141593
+- DECIMAL, NUMERIC - floating point numbers that have user specified percision. MONEY - floating point numbers use for money
+- ARRAY - an array (array types are rarely used)
