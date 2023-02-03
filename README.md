@@ -143,3 +143,26 @@ SELECT id, first_name FROM users;
 
 SELECT id, first_name FROM users WHERE id=1;
 
+### INSERT
+To insert or add data to a table - we use the INSERT command
+
+--start with the INSERT INTO commands and then specify a table(column1,
+column2, ...) and VALUES for each column.
+
+INSERT INTO users(first_name, last_name) VALUES ('Elie', 'Schoppik');
+
+### UPDATE
+To update a row or multiple rows we use the UPDATE command.
+
+UPDATE users SET first_name = 'Elie'; -- will update all users
+
+UPDATE users SET first_name = 'Elie' WHERE id = 1; -- will update a user with
+an id of 1
+
+### DELETE
+To delete a row or multiple rows we use the DELETE FROM command.
+
+DELETE FROM users; -- will delete all users
+
+DELETE FROM users WHERE id=1; -- will delete a user with an id of 1
+
