@@ -240,9 +240,68 @@ If we want to order results in ascending or descending order we use the ORDER BY
 
 <img width="306" alt="Screenshot 2023-02-05 at 3 37 39 PM" src="https://user-images.githubusercontent.com/101606295/216844537-b164cb46-b715-49cd-8a42-4c860231b7f5.png">
 
-<img width="306" alt="Screenshot 2023-02-05 at 3 35 43 PM" src="https://user-images.githubusercontent.com/101606295/216843924-66a8972a-f8f5-41a6-a4a8-08b32fce75e6.png">
+## Changing Data Types
 
-###
+Commonly in SQL, we will want to output a certain data type for an operation, to convert one data type to another we can use the CAST command or use ::data_type
+
+<img width="306" alt="Screenshot 2023-02-05 at 4 00 01 PM" src="https://user-images.githubusercontent.com/101606295/216845508-5ddcc00a-0d69-4be9-9c7c-c27fb135283f.png">
+
+### COUNT
+
+To count the number of occurances we use the COUNT function.
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 54 17 PM" src="https://user-images.githubusercontent.com/101606295/216845272-4e9e7eb4-8314-43ff-9bcc-62aaf5f3cf75.png">
+<img width="306" alt="Screenshot 2023-02-05 at 3 55 04 PM" src="https://user-images.githubusercontent.com/101606295/216845305-70f3d8ae-421d-41c1-a336-3116b5936ed6.png">
+
+### SUM
+
+To figure out the sum we can use the SUM function and even round numbers using the ROUND function as well.
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 55 50 PM" src="https://user-images.githubusercontent.com/101606295/216845339-429703ad-5b27-4cee-9a58-cc1e2fa5337d.png">
+
+### MIN
+
+To find the minimum value in a data set we use the MIN function.
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 56 53 PM" src="https://user-images.githubusercontent.com/101606295/216845388-19c4ea94-d84c-41c8-ac58-594390f03b64.png">
+
+### MAX
+
+To find the maximum value in a data set we use the MAX function.
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 57 00 PM" src="https://user-images.githubusercontent.com/101606295/216845401-8022d73c-006d-48b1-ada0-a85aa8b94f9f.png">
+
+### AVG
+
+To find the average value in a data set we use the AVG function. We can attach the AS command to alias the column name.
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 57 08 PM" src="https://user-images.githubusercontent.com/101606295/216845411-35005f90-376e-4326-a346-66cf1790e452.png">
+
+
+### GROUP BY
+
+Now that we have seen a couple aggregate functions, lets take some information.
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 58 26 PM" src="https://user-images.githubusercontent.com/101606295/216845439-7d707da1-88a4-4167-b551-bb65ef964c2a.png">
+
+### HAVING
+
+When using a GROUP BY clause, we can not attach a WHERE if we want to be more selective. Instead we use the HAVING keyword to place condition on our GROUP BY command.
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 58 58 PM" src="https://user-images.githubusercontent.com/101606295/216845473-f0da4e20-732c-484c-89fd-95d13ea74593.png">
+
+### DISTINCT
+
+If we only want to find unique values in a column, we can use DISTINCT, we can also do this for pairs of columns separated by a comma.
+
+
+
+### CASE
+
+In SQL, we can use conditional logic to query our data and display custom results based off of the condition.
+
+
+
 
 
 
