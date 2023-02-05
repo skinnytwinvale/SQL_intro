@@ -14,6 +14,8 @@ are used to capture and analyze data on a more permanent basis.
 9. Row / Record - Each row in a table represents a record stored. In our "users" table, we may have a row that looks like 1, "elie", "secret". Where 1 represents a unique id, "elie" represents the value of the "username" and "secret" represents the value of the "password".
 10. psql - a command line program, which can be used to enter PostgreSQL queries directly, or executed from a file.
 
+# CRUD
+
 ## PSQL Syntax
 
 - \du - lists users
@@ -165,4 +167,21 @@ To delete a row or multiple rows we use the DELETE FROM command.
 DELETE FROM users; -- will delete all users
 
 DELETE FROM users WHERE id=1; -- will delete a user with an id of 1
+
+# Operators And Aggregates
+
+By the end of this chapter, you should be able to:
+- Use built in operators to write more complex queries 
+- Use ORDER BY to categorize results
+- Use built in aggregate functions to calculate data 
+- Use GROUP BY to aggregate data into sub groups 
+- Use CASE statements for custom conditional output
+
+### WHERE
+
+The building block for these operators is the WHERE clause which comes after any operation like SELECT, UPDATE or DELETE
+
+![image](https://user-images.githubusercontent.com/101606295/216842846-c7b6e07b-3d93-4afe-918f-9f5fda980c24.png)
+![image](https://user-images.githubusercontent.com/101606295/216842865-3d9a5e96-0593-496b-8282-f591eb2f1894.png)
+
 
