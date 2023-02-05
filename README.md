@@ -184,4 +184,12 @@ The building block for these operators is the WHERE clause which comes after any
 <img width="306" src="https://user-images.githubusercontent.com/101606295/216842846-c7b6e07b-3d93-4afe-918f-9f5fda980c24.png">
 <img width="306" src="https://user-images.githubusercontent.com/101606295/216842865-3d9a5e96-0593-496b-8282-f591eb2f1894.png">
 
+### IN
+
+To find multiple records we can search for multiple terms using IN
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 26 30 PM" src="https://user-images.githubusercontent.com/101606295/216843081-207f6dd0-810d-4208-9094-7fd57ec45b79.png">
+
+To find multiple records we can search for multiple terms using IN
+
 
