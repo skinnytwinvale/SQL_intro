@@ -190,6 +190,61 @@ To find multiple records we can search for multiple terms using IN
 
 <img width="306" alt="Screenshot 2023-02-05 at 3 26 30 PM" src="https://user-images.githubusercontent.com/101606295/216843081-207f6dd0-810d-4208-9094-7fd57ec45b79.png">
 
-To find multiple records we can search for multiple terms using IN
+### NOT IN
+
+We can do the exact inverse of IN using NOT IN
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 28 42 PM" src="https://user-images.githubusercontent.com/101606295/216843163-c218ca63-6216-4368-915f-fa0fcef28f28.png">
+
+### BETWEEN
+
+To search for a field in a range, we can use BETWEEN x AND y.
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 30 02 PM" src="https://user-images.githubusercontent.com/101606295/216843218-7321698f-7852-46d7-b481-ef20e93bde7f.png">
+
+### Arithmetic
+
+SQL supports all kinds of arithmetic operators like <, <=, >=, > and !=.
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 31 18 PM" src="https://user-images.githubusercontent.com/101606295/216843282-f5fe7c9d-779c-425f-8f5b-1f6e17fbe5a9.png">
+
+### AND
+
+To check that multiple conditions are satisfied we can use the AND command.
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 32 32 PM" src="https://user-images.githubusercontent.com/101606295/216843343-6ae7e06a-9c65-44ca-9729-131777d60b78.png">
+
+### OR
+
+To check that at least one condition is satisfied we can use the OR command.
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 33 27 PM" src="https://user-images.githubusercontent.com/101606295/216843392-8f44c8ee-ad8c-4777-baff-0f2c8777d832.png">
+
+### LIKE
+
+To search for a term we can use the LIKE. The % denotes any possible character. LIKE is
+case sensitive.
+- FIND ALL PLAYERS WHOSE NAME STARTS WITH IS
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 34 08 PM" src="https://user-images.githubusercontent.com/101606295/216843484-2557ca97-a789-432c-a3fa-3d25bae5f041.png">
+
+### ILIKE
+
+ILIKE is similar to the LIKE command, but it is case insensitive.
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 35 43 PM" src="https://user-images.githubusercontent.com/101606295/216843924-66a8972a-f8f5-41a6-a4a8-08b32fce75e6.png">
+
+### ORDER BY
+
+If we want to order results in ascending or descending order we use the ORDER BY ASC_or_DESC command.
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 37 39 PM" src="https://user-images.githubusercontent.com/101606295/216844537-b164cb46-b715-49cd-8a42-4c860231b7f5.png">
+
+<img width="306" alt="Screenshot 2023-02-05 at 3 35 43 PM" src="https://user-images.githubusercontent.com/101606295/216843924-66a8972a-f8f5-41a6-a4a8-08b32fce75e6.png">
+
+###
+
+
+
 
 
