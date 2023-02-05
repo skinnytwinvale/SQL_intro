@@ -182,6 +182,6 @@ By the end of this chapter, you should be able to:
 The building block for these operators is the WHERE clause which comes after any operation like SELECT, UPDATE or DELETE
 
 <img width="306" src="https://user-images.githubusercontent.com/101606295/216842846-c7b6e07b-3d93-4afe-918f-9f5fda980c24.png">
-![image](https://user-images.githubusercontent.com/101606295/216842865-3d9a5e96-0593-496b-8282-f591eb2f1894.png)
+<img width="306" src="https://user-images.githubusercontent.com/101606295/216842865-3d9a5e96-0593-496b-8282-f591eb2f1894.png">
 
 
